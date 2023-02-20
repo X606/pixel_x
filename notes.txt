@@ -1,0 +1,21 @@
+variable decleration:
+[type] [name] = [expression];
+
+variable assignment:
+[name] = [expression];
+
+expressions:
+    Mono:
+        Identity (+)
+        Inverse (-)
+        Parentheses? (())
+    Binary:
+        Add (+)
+        Subtract (-)
+        Multiply (*)
+        Divide (/)
+
+types:
+selector
+int
+string

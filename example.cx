@@ -1,0 +1,33 @@
+fn do_stuff(int32 value): int32 {
+    return value / 2;
+}
+
+my_struct Val;
+
+fn main() {
+    int32 my_var = 25 + 1;
+    selector my_selector = @e[];
+
+    my_selector.do_stuff(25);
+    
+    // equivalent
+    do_stuff(26);
+    @s.do_stuff(27);
+
+    if my_var == 26 {
+        // some code
+        my_var = do_stuff(my_var);
+    }
+    else {
+        my_var = do_stuff(my_var + 25);
+    }
+    
+    /*/* this is a comment*/
+
+    while my_var > 0 {
+        my_var -= 1;
+    }
+
+    raw("say hi :)");
+
+}
